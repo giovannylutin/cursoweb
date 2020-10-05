@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendario</title>
+</head>
+<body>
+  <h1>Calendario 1</h1>
+  <form action="">
+    <label for="hora">
+      <span>hora</span>
+      <input type="time" id="hora" name="hora"/>
+    </label>
+    <label for="dia">
+      <span>Día</span>
+      <input type="date" id="dia" name="dia"/>
+    </label>
+    <label for="semana">
+      <span>Semana</span>
+      <input type="week" id="semana" name="semana"/>
+    </label>
+    <label for="mes">
+      <span>Mes</span>
+      <input type="month" id="mes" name="mes"/>
+    </label>
+    <input type="submit">
+  </form>
+  <h1>Calendario 2</h1>
+  <form action="">
+    <label for="calendario">
+      <span>Calendario-forDatos</span>
+      <input type="datetime-local" id="calendario" name="calendario">
+      <input type="submit">
+    </label>  
+  </form>
+  <h1>Formularios con autocomplete y require</h1>
+  <main>
+    <form action="">
+      <label for="nombre">
+        <span>¿Cuál es tu nombre?</span>
+        <input type="text" id="nombre" name="nombre" autocomplete="name" required placeholder="Tu nombre" />
+      </label>
+      <label for="correo" <span>¿Cuál es tu correo?</span>
+        <input type="email" id="correo" name="correo" autocomplete="email" required placeholder="Tu correo" />
+      </label>
+      <label for="pais">
+        <span>¿En qué país vives?</span>
+        <input type="text" id="pais" name="pais" autocomplete="country" required placeholder="Tu país"/>
+      </label>
+      <label for="cp">
+        <span>¿Cuál es tu código postal?</span>
+        <input type="text" id="cp" name="cp" autocomplete="postal-code" required placeholder="Tu código postal"/>
+      </label>
+      <input type="submit" />
+    </form>
+  </main>
+  <h1>Select 1</h1>
+  <main>
+    <span>Selecciona el Curso:</span>
+    <select name="cursos" id="">
+      <option value="JavaScript">JavaScript</option>
+      <option value="HTML5">HTML5</option>
+      <option value="CSS3">CSS3</option>
+      <option value="Web Standars">Web Standars</option>
+    </select>
+  </main>
+  <h1>Select2</h1>
+  <main>
+    <span>Selecciona el Curso:</span>
+    <input list="cursos">
+    <datalist id="cursos">
+      <option value="JavaScript"></option>
+      <option value="HTML5"></option>
+      <option value="CSS3"></option>
+      <option value="Web Standars"></option>
+    </datalist>
+  </main>
+</body>
+</html>
