@@ -1,0 +1,17 @@
+/* Hay tres formas de agregar estilos
+1: por elementos */
+p{
+  color: blue;
+  font-size: 40px;
+}
+
+/* Por clase se utiliza punto */
+.segundoTexto{
+  color: red;
+  font-size: 30px;
+}
+/* Por ID se utiliza numeral */
+#tercerTexto{
+  color: green;
+  font-size: 20px;
+}
