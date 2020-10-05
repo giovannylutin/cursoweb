@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>esto es una mala practica pero funciona</h1>
+            <select name="cursos" id="">
+                <option value="1">css</option>
+                <option value="2">js</option>
+                <option value="3">html</option>
+                <option value="vuejs">vuejs</option>
+                <option value="angular">angular</option>
+            </select>
+        </section>
+
+        <section>
+            <h1>esto es una buena practica igual funciona</h1>
+            <input list="cursos2" />
+            <datalist id="cursos2">
+                <option value="css">css</option>
+                <option value="js">js</option>
+                <option value="html">html</option>
+                <option value="vuejs">vuejs</option>
+                <option value="angular">angular</option>
+            </datalist>
+        </section>
+    </main>
+</body>
+</html>
