@@ -1,0 +1,31 @@
+.main-nav{
+  margin-top: 10px;
+  list-style: none;
+  padding-left: 0;
+  background-color: rgb(23, 23, 51);
+}
+.main-nav__item{
+  display: inline-block;
+}
+
+.main-nav__item a{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
+  padding: 5px;
+  border-radius: 2px;
+  text-decoration: none;
+  -webkit-text-stroke: 0.5px blue;
+}
+
+/* Pseudo clases */
+.main-nav__item a:hover{
+  color: aqua;
+}
+
+.main-nav__item a:active{
+  color: red;
+}
+/* Pseudo elementos */
+.main-nav__item a::after{
+  content: " | ";
+}
