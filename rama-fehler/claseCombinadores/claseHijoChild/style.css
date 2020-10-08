@@ -1,0 +1,4 @@
+/* combinador hijo child*/
+div > p{
+  color: red;
+}
