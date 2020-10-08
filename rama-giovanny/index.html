@@ -28,29 +28,30 @@ cualquier enlace hacia otro elemento que nesesitemmos para nuestro proyecto -->
     <nav>
       <h1>{{ message }}</h1>
     </nav>
-
     <section id="accordion">
       <ol class="card">
-        <li v-for="mostrarcurso in cursos" class="card-header" id="headingOne">
+        <div  v-for="mostrarcurso in cursos">
+
+        <li class="card-header" v-bind:id="mostrarcurso.id_curso" >
           <h3 class="mb-0">
-            <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <a class="btn btn-link" data-toggle="collapse" v-bind:data-target="'#t'+mostrarcurso.id_curso" aria-expanded="true" v-bind:aria-controls="'#t'+mostrarcurso.id_curso">
               {{ mostrarcurso.curso }}
             </a>
           </h3>
         </li>
-        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+
+        <div v-bind:id="'t'+mostrarcurso.id_curso" class="collapse" aria-labelledby="mostrarcurso.id" v-bind:data-parent="'#t'+mostrarcurso.id_curso">
           <div class="card-body">
             <ol>
-              <li v-for="classlistado in clases"><a v-bind:href="classlistado.enlaceclass">{{classlistado.class}} {{classlistado.contenido}}</a></li>
-              <!-- <li><a href="clases/clase19.html"> clase 19 "select"</a></li>
-              <li><a href="clases/clase_20.html"> clase 20 "botones"</a></li> -->
+              <li v-for="classlistado in clases" v-if="classlistado.fk_idcurso==mostrarcurso.id_curso"><a v-bind:href="classlistado.enlaceclass">{{classlistado.class}} {{classlistado.contenido}}</a></li>        
             </ol>
           </div>
         </div>
+      </div>
       </ol>
     </section>
-
   </main>
+  
     <!-- <header> Sección superior de nuestro website  -->
       <!-- <nav></nav> Sección de navegación de nuestro website, siempre dentro del header -->
     <!-- </header> -->
