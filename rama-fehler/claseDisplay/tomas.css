@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.page--header {
+      background-color: grey;
+      height: 10vh;
+}
+
+.title {
+    display: inline-block;
+}
+
+.page--header nav {
+    display: inline-block;
+    margin-left: 80%;
+    position: relative;
+    bottom: 40%;
+}
+
+.nav li {
+    display: inline-block;
+
+}
+
+.page--main {
+    height: 80vh;
+
+}
+
+.page--main--sidebar {
+    width: 30vw;
+    height: 80vh;
+    background-color: blue;
+
+}
+
+.main--sidebar__block {
+    width: 40%;
+    height: 10%;
+    padding: 5%;
+    position: relative;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10vh;
+    background-color: blueviolet;
+
+} 
+
+.page--main--content {
+    width: 80vw;
+    height: 80vh;
+    position: relative;
+    bottom: 80vh;
+    left: 62vh;
+    background-color: aqua;
+}
+
+.page--footer {
+   height: 10vh;
+   background-color: green;
+}
