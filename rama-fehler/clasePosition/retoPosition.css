@@ -1,0 +1,45 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.parent{
+  width: 100vw;
+  height: 100vh;
+  display: inline-block;
+  background-color: rgb(245, 234, 215);
+}
+
+.box{
+  display: inline-block;
+}
+
+#one{
+  margin-top: 100px;
+  margin-left: 100px;
+  position: absolute;
+  width: 80%;
+  min-width: 320px;
+  max-width: 400px;
+  height: 300px;
+  border-radius: 40px;
+  background-color: rgb(226, 226, 226);
+  border: solid 2px gray;
+  padding: 50px 40px;
+  text-align: justify;
+}
+
+#two{
+  text-align: center;
+  /* padding-left: 40px;*/
+  padding-top: 25px; 
+  margin-top: 60px;
+  margin-left: 170px;
+  border-radius: 20px;
+  position: relative;
+  width: 275px;
+  height: 75px;
+  background-color: rgb(243, 63, 63);
+  border: solid 2px black;
+}
