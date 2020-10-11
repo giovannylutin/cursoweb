@@ -13,7 +13,9 @@ var app = new Vue({
         {id:25,fk_idcurso:1,class:"clase 25",contenido:" modelo caja",enlaceclass:"clases/clase_25.html"},
         {id:26,fk_idcurso:1,class:"clase 26",contenido:" herencia",enlaceclass:"clases/clase_26.html"},
         {id:27,fk_idcurso:1,class:"clase 27",contenido:" especifisidad y orden en selectores",enlaceclass:"clases/clase_28.html"},
-        {id:26,fk_idcurso:1,class:"clase 28 y 29",contenido:"Mas sobre selectores",enlaceclass:"clases/clase_28.html"}
+        {id:26,fk_idcurso:1,class:"clase 28 y 29",contenido:"Mas sobre selectores",enlaceclass:"clases/clase_28.html"},
+        {id:34,fk_idcurso:1,class:"clase 34",contenido:" em",enlaceclass:"clases/clase_34.html"},
+        {id:35,fk_idcurso:1,class:"clase 35",contenido:" rem",enlaceclass:"clases/clase_35.html"}
       ]
     }
     })
