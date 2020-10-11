@@ -9,9 +9,13 @@ nav h1{
     text-align: center;
     font-size: 2rem;
 }
-.card-body ol{
-    padding-left: 3rem;
+.card{
     font-weight: bold;
+}
+.card-body ol{
+    padding-left: 1.5rem;
+    font-weight: bold;
+    font-size: 1rem;
 }
 li a{
     color: black;

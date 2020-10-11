@@ -42,11 +42,18 @@ cualquier enlace hacia otro elemento que nesesitemmos para nuestro proyecto -->
 
           <div v-bind:id="'t'+mostrarcurso.id_curso" class="collapse" aria-labelledby="mostrarcurso.id" v-bind:data-parent="'#t'+mostrarcurso.id_curso">
             <div class="card-body">
-              <ol>
-                <li v-for="classlistado in clases" v-if="classlistado.fk_idcurso==mostrarcurso.id_curso"><a v-bind:href="classlistado.enlaceclass">{{classlistado.class}} {{classlistado.contenido}}</a></li>        
-              </ol>
+              <div>
+                <ol>
+                  <li v-for="(classlistado, index) in clases" v-if="classlistado.fk_idcurso==mostrarcurso.id_curso">
+                    <a v-bind:href="classlistado.enlaceclass">
+                      {{classlistado.class}} {{classlistado.contenido}}
+                    </a>
+                  </li>
+                </ol>
+              </div>
             </div>
           </div>
+
         </div>
       </ol>
     </section>
