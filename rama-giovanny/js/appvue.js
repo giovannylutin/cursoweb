@@ -4,7 +4,7 @@ var app = new Vue({
       message: 'Menu de retos de platzi segun cursos',
       cursos:[
           {id_curso:1,curso:"Curso Definitivo de HTML y CSS",estado:1},
-          {id_curso:2,curso:"Aun No se ha Iniciado ......",estado:1}
+          {id_curso:2,curso:"Curso Práctico de HTML y CSS",estado:1}
         ],
       clases:[
         {id:1,fk_idcurso:1,class:"clase 8",contenido:"reto 1",enlaceclass:"clases/clase_8.html"},
@@ -17,7 +17,16 @@ var app = new Vue({
         {id:8,fk_idcurso:1,class:"clase 34",contenido:" em",enlaceclass:"clases/clase_34.html"},
         {id:9,fk_idcurso:1,class:"clase 35",contenido:" rem",enlaceclass:"clases/clase_35.html"},
         {id:10,fk_idcurso:1,class:"clase ",contenido:" reto 2",enlaceclass:"clases/clase_reto2.html"},
-        {id:11,fk_idcurso:1,class:"clase ",contenido:" reto 3",enlaceclass:"clases/clase_reto3.html"}
+        {id:11,fk_idcurso:1,class:"clase ",contenido:" reto 3",enlaceclass:"clases/clase_reto3.html"},
+        {id:12,fk_idcurso:1,class:"clase ",contenido:" reto 4",enlaceclass:"clases/clase_reto4.html"},
+        {id:13,fk_idcurso:1,class:"clase 36",contenido:"",enlaceclass:"clases/clase_36.html"},
+        {id:14,fk_idcurso:1,class:"clase 37",contenido:"",enlaceclass:"clases/clase_37.html"},
+        {id:15,fk_idcurso:1,class:"clase 46",contenido:"",enlaceclass:"clases/clase_46.html"},
+        {id:16,fk_idcurso:1,class:"clase 47",contenido:"",enlaceclass:"clases/clase_47.html"},
+        {id:17,fk_idcurso:1,class:"clase 50",contenido:"",enlaceclass:"clases/clase_50.html"},
+        {id:18,fk_idcurso:1,class:"clase 52",contenido:"",enlaceclass:"clases/clase_52.html"},
+        {id:19,fk_idcurso:2,class:"Bienvenida",contenido:"- #PlatziCodingChallenge || PlatziCodingChallenge",enlaceclass:""}
+
       ]
     }
     })
