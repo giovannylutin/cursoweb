@@ -26,7 +26,6 @@ var app = new Vue({
         {id:17,fk_idcurso:1,class:"clase 50",contenido:"",enlaceclass:"clases/clase_50.html"},
         {id:18,fk_idcurso:1,class:"clase 52",contenido:"",enlaceclass:"clases/clase_52.html"},
         {id:19,fk_idcurso:2,class:"Bienvenida",contenido:"- #PlatziCodingChallenge || PlatziCodingChallenge",enlaceclass:""}
-
       ]
     }
     })
