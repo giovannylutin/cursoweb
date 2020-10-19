@@ -25,7 +25,7 @@ var app = new Vue({
         {id:16,fk_idcurso:1,class:"clase 47",contenido:"",enlaceclass:"clases/clase_47.html"},
         {id:17,fk_idcurso:1,class:"clase 50",contenido:"",enlaceclass:"clases/clase_50.html"},
         {id:18,fk_idcurso:1,class:"clase 52",contenido:"",enlaceclass:"clases/clase_52.html"},
-        {id:19,fk_idcurso:2,class:"Bienvenida",contenido:"- #PlatziCodingChallenge || PlatziCodingChallenge",enlaceclass:""}
+        {id:1,fk_idcurso:2,class:"Reto 1",contenido:" Clon de google",enlaceclass:"clases/Curso_Práctico_de_HTML_y_CSS/clase_reto1.html"}
       ]
     }
     })
