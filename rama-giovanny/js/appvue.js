@@ -2,6 +2,8 @@ var app = new Vue({
     el: '#app',
     data: {
       message: 'Menu de retos de platzi segun cursos',
+      mensaje2:" Logros Cumplidos",
+      carrera: "Escuela de Desarrollo Web",
       cursos:[
           {id_curso:1,curso:"Curso Definitivo de HTML y CSS",estado:1},
           {id_curso:2,curso:"Curso Práctico de HTML y CSS",estado:1}
