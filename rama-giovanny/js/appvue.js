@@ -2,6 +2,8 @@ var app = new Vue({
     el: '#app',
     data: {
       message: 'Menu de retos de platzi segun cursos',
+      mensaje2:" Logros Cumplidos",
+      carrera: "Escuela de Desarrollo Web",
       cursos:[
           {id_curso:1,curso:"Curso Definitivo de HTML y CSS",estado:1},
           {id_curso:2,curso:"Curso Práctico de HTML y CSS",estado:1}
@@ -25,7 +27,8 @@ var app = new Vue({
         {id:16,fk_idcurso:1,class:"clase 47",contenido:"",enlaceclass:"clases/clase_47.html"},
         {id:17,fk_idcurso:1,class:"clase 50",contenido:"",enlaceclass:"clases/clase_50.html"},
         {id:18,fk_idcurso:1,class:"clase 52",contenido:"",enlaceclass:"clases/clase_52.html"},
-        {id:1,fk_idcurso:2,class:"Reto 1",contenido:" Clon de google",enlaceclass:"clases/Curso_Práctico_de_HTML_y_CSS/clase_reto1.html"}
+        {id:1,fk_idcurso:2,class:"Reto 1",contenido:" Clon de google",enlaceclass:"clases/Curso_Práctico_de_HTML_y_CSS/clase_reto1.html"},
+        {id:1,fk_idcurso:2,class:"Reto 2",contenido:" Clon de wikipedia",enlaceclass:"clases/Curso_Práctico_de_HTML_y_CSS/clase_reto2.html"}
       ]
     }
     })

@@ -25,39 +25,69 @@ cualquier enlace hacia otro elemento que nesesitemmos para nuestro proyecto -->
     <title>Curso platzi</title>
 </head>
 <body>
-  <main class="container" id="app">
-    <nav>
-      <h1>{{ message }}</h1>
-    </nav>
-    <section id="accordion">
-      <ol class="card">
-        <div  v-for="mostrarcurso in cursos">
-          <li class="card-header" v-bind:id="mostrarcurso.id_curso" >
-            <h3 class="mb-0">
-              <a class="btn btn-link" data-toggle="collapse" v-bind:data-target="'#t'+mostrarcurso.id_curso" aria-expanded="true" v-bind:aria-controls="'#t'+mostrarcurso.id_curso">
-                {{ mostrarcurso.curso }}
-              </a>
-            </h3>
-          </li>
-
-          <div v-bind:id="'t'+mostrarcurso.id_curso" class="collapse" aria-labelledby="mostrarcurso.id" v-bind:data-parent="'#t'+mostrarcurso.id_curso">
-            <div class="card-body">
-              <div>
-                <ol>
-                  <li v-for="(classlistado, index) in clases" v-if="classlistado.fk_idcurso==mostrarcurso.id_curso">
-                    <a v-bind:href="classlistado.enlaceclass">
-                      {{classlistado.class}} {{classlistado.contenido}}
-                    </a>
-                  </li>
-                </ol>
+  
+  <main class="contenedor" id="app">
+    <header class="cabecera">
+      <span>{{ carrera }}</span>
+  </header>
+  <section class="informacion">
+    <section class="informacion__clase">
+      <div class="titulos-informacion"> <h1>{{ message }}</h1></div>
+      
+      <div class="contenido-informacion">
+        <section id="accordion">
+          <ol class="card">
+            <div  v-for="mostrarcurso in cursos">
+              <li class="card-header" v-bind:id="mostrarcurso.id_curso" >
+                <h3 class="mb-0">
+                  <a class="btn btn-link" data-toggle="collapse" v-bind:data-target="'#t'+mostrarcurso.id_curso" aria-expanded="true" v-bind:aria-controls="'#t'+mostrarcurso.id_curso">
+                    {{ mostrarcurso.curso }}
+                  </a>
+                </h3>
+              </li>
+    
+              <div v-bind:id="'t'+mostrarcurso.id_curso" class="collapse" aria-labelledby="mostrarcurso.id" v-bind:data-parent="'#t'+mostrarcurso.id_curso">
+                <div class="card-body">
+                  <div>
+                    <ol>
+                      <li v-for="(classlistado, index) in clases" v-if="classlistado.fk_idcurso==mostrarcurso.id_curso">
+                        <a v-bind:href="classlistado.enlaceclass">
+                          {{classlistado.class}} {{classlistado.contenido}}
+                        </a>
+                      </li>
+                    </ol>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-
-        </div>
-      </ol>
+          </ol>
+        </section>
+      </div>
     </section>
+
+    <section class="informacion__logros">
+      <div class="logros-titulo"> <h1>{{ mensaje2 }}</h1></div>
+      <div class="contenido-logros">
+        <div class="pint1">
+          <!-- <img src="http://drive.google.com/uc?export=view&id=1ARfXKw4qYQQIJ58SLv0LSmEuyXjrjmFV" alt=""> -->
+        </div>
+        <div class="pint1">
+           <a href=""><img src="http://drive.google.com/uc?export=view&id=1LGVVmqy_lZya5Qp9C2KC1Yq47wyy2l6N" alt=""></a>
+        </div>
+        <div class="pint1">
+          <a href=""><img src="http://drive.google.com/uc?export=view&id=1ARfXKw4qYQQIJ58SLv0LSmEuyXjrjmFV" alt=""></a>
+       </div>
+       <div class="pint1">
+        <a href=""><img src="http://drive.google.com/uc?export=view&id=1ARfXKw4qYQQIJ58SLv0LSmEuyXjrjmFV" alt=""></a>
+     </div>
+     <div class="pint1">
+      <a href=""><img src="http://drive.google.com/uc?export=view&id=1ARfXKw4qYQQIJ58SLv0LSmEuyXjrjmFV" alt=""></a>
+   </div>
+      </div>
+    </section>
+  </section>
   </main>
+ 
   
     <!-- <header> Sección superior de nuestro website  -->
       <!-- <nav></nav> Sección de navegación de nuestro website, siempre dentro del header -->
