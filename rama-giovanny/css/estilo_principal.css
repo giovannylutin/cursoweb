@@ -55,7 +55,7 @@
     padding: 19px;
     border: 1.5px solid lightgrey;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     
 }
 .pint1{

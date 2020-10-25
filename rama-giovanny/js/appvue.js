@@ -6,7 +6,8 @@ var app = new Vue({
       carrera: "Escuela de Desarrollo Web",
       cursos:[
           {id_curso:1,curso:"Curso Definitivo de HTML y CSS",estado:1},
-          {id_curso:2,curso:"Curso Práctico de HTML y CSS",estado:1}
+          {id_curso:2,curso:"Curso Práctico de HTML y CSS",estado:1},
+          {id_curso:3,curso:"Curso de Responsive Design",estado:1}
         ],
       clases:[
         {id:1,fk_idcurso:1,class:"clase 8",contenido:"reto 1",enlaceclass:"clases/clase_8.html"},
@@ -28,7 +29,8 @@ var app = new Vue({
         {id:17,fk_idcurso:1,class:"clase 50",contenido:"",enlaceclass:"clases/clase_50.html"},
         {id:18,fk_idcurso:1,class:"clase 52",contenido:"",enlaceclass:"clases/clase_52.html"},
         {id:1,fk_idcurso:2,class:"Reto 1",contenido:" Clon de google",enlaceclass:"clases/Curso_Práctico_de_HTML_y_CSS/clase_reto1.html"},
-        {id:1,fk_idcurso:2,class:"Reto 2",contenido:" Clon de wikipedia",enlaceclass:"clases/Curso_Práctico_de_HTML_y_CSS/clase_reto2.html"}
+        {id:1,fk_idcurso:2,class:"Reto 2",contenido:" Clon de wikipedia",enlaceclass:"clases/Curso_Práctico_de_HTML_y_CSS/clase_reto2.html"},
+        {id:1,fk_idcurso:3,class:"Single page",contenido:"-Estatica",enlaceclass:"clases/Curso_de_Responsive_Design/index.html"}
       ]
     }
     })
