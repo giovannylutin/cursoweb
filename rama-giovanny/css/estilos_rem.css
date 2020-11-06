@@ -1,0 +1,12 @@
+/* truco para rem */
+html{
+    font-size: 62.5%;
+}
+/* fotmula = base*62.5% = 10  entonces 10 x 1.6 = 16*/
+p{
+    font-size: 1.6rem;
+}
+/* rem siempre tomara la referencia de html es decir 16px es decir un rem es = 16px*/
+main div{
+    font-size: 1.6rem;
+}
