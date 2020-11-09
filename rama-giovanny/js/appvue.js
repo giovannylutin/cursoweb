@@ -4,12 +4,8 @@ var app = new Vue({
       message: 'Menu de retos de platzi segun cursos',
       mensaje2:" Logros Cumplidos",
       carrera: "Escuela de Desarrollo Web",
-      contacts: [],
-      cursos:[
-          {id_curso:1,curso:"Curso Definitivo de HTML y CSS",estado:1},
-          {id_curso:2,curso:"Curso Práctico de HTML y CSS",estado:1},
-          {id_curso:3,curso:"Curso de Responsive Design",estado:1}
-        ],
+      info:[],
+      cursos:[],
       clases:[
         {id:1,fk_idcurso:1,class:"clase 8",contenido:"reto 1",enlaceclass:"clases/clase_8.html"},
         {id:2,fk_idcurso:1,class:"clase 19",contenido:" select",enlaceclass:"clases/clase_19.html"},
@@ -34,34 +30,15 @@ var app = new Vue({
         {id:1,fk_idcurso:3,class:"Single page",contenido:"-Estatica",enlaceclass:"clases/Curso_de_Responsive_Design/index.html"}
       ]
      },
-    
-     mounted: function () {
-      console.log('Hello from Vue!')
-      this.getAllRequest()
-      // getContacts();
-      // axios.get('https://testgio90.000webhostapp.com/api.php')
-      // .then(response => (this.contacts = response))
-      // https://www.techiediaries.com/vuejs-php-mysql-rest-crud-api-tutorial/
-    //  console.log(this.contacts)
-    //     .then(function (response){
-    //       console.log(response.data);
-    //      app.contacts = response.data;
-    //     })
-    //    .catch(function (error) {
-    //      console.log(error);
-    //  });
-    },
-    methods:{
-      getAllRequest() {
-        axios.get('https://testgio90.000webhostapp.com/clases')
-    .then(function (response) {
-        console.log(response);
-    })
-    .catch(function (error) {
-      console.log(error);
-  })
-  .then(function () {
-  });
-      }
-    }
+     mounted (){
+        this.obtenerclases();
+     },
+     methods:{
+       obtenerclases(){
+        axios
+        .get('https://testgio90.000webhostapp.com/cursos')
+        .then(response => (this.cursos = response.data))
+        //  console.log("hola")
+       }
+     }
 });
