@@ -8,22 +8,26 @@
 --grey: #bababa;
 --off-white: #faf8f7;
 --just-white: #fff; 
+--texto_complementario: #757575;
+
 }
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+   
 }
-body
+/* body
 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     background-color: gray;
-}
+} */
 .dimension{
-    width: 320px;
-    background-color: white;
+    background-color: #E5E5E5;
+    /* width: 320px; */
+    /* background-color: white; */
     /* outline:2px solid seagreen; */
 
 }
@@ -104,15 +108,104 @@ header{
     /* outline: 2px solid red; */
     width: 13px;
     height: 8px;
-    margin-left: 1px;
+    margin-left: 14px;
     background-image: url("http://drive.google.com/uc?export=view&id=1X8QMTSd0BOV7OtVcVdOdoORdbQv8uqoP");
     background-repeat: no-repeat;
+}
+/* .container_principal{
+    
+} */
+.imagbitcoin__contenedor{
+    margin: 0 auto;
+     /* outline: 2px solid red; */
+     margin-top: 60px;
+     margin-bottom: 60px;
+     
 }
 .imagbitcoin{
     /* outline: 2px solid red; */
     background-image: url("http://drive.google.com/uc?export=view&id=1j0G7N1W88bt0RcXOCCbjEIKQ-jf40wzm");
     background-repeat: no-repeat;
     background-position: center;
-    /* width: 100%;*/
-    height: 300px; 
+    height: 195px;
+   
+}
+.infobatatbit{
+    /* outline: 2px solid red; */
+    width: 100%;
+    text-align: center;
+    /* background-color: #E5E5E5; */
+}
+.infobatatbit__titulo{
+    /* outline: 2px solid violet; */
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.infobatatbit__titulo h2{
+    /* outline: 2px solid green; */
+    font-weight: bold;
+    font-size: 24px;
+}
+.infobatatbit__detalle{
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+}
+.infobatatbit__detalle h3{
+    font-family: ‘DM Sans’, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--texto_complementario);
+}
+.infobatatbit__estados{
+    /* outline: 2px solid red; */
+    width: 70%;
+    margin: 0 auto;
+    height: 360px;
+    min-width: 235px;
+    max-width: 500px;
+    font-family: "inter",sans-serif;
+}
+.infobatatbit__estados-titulo{
+    color: var(--bitcoin-orange);
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    text-align: left;
+    padding-top: 20px;
+}
+.infobatatbit__tabla{
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+.infobatatbit__tablamuestra{
+    width: 100%;
+    height: 100%;
+}
+.infobatatbit__tablamuestra td{
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500px;
+    line-height: 1.9rem;
+    color: var(--grey);
+    background-color: var(--just-white);
+}
+.infobatatbit__tablamuestra .infobatatbit__tabla-coin{
+    border-radius: 15px 0 0 0;
+}
+.infobatatbit__tablamuestra .infobatatbit__tabla-alza{
+    border-radius: 0 15px 0 0;
+}
+.infobatatbit__tablamuestra .infobatatbit__inferior-coin{
+    border-radius: 0 0 0 15px;
+}
+.infobatatbit__tablamuestra .infobatatbit__inferior-alza{
+    border-radius: 0 0 15px 0;
+}
+.price{
+    color: black;
 }

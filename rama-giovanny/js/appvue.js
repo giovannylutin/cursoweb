@@ -53,7 +53,7 @@ var app = new Vue({
     },
     methods:{
       getAllRequest() {
-        axios.get('https://testgio90.000webhostapp.com/api.php')
+        axios.get('https://testgio90.000webhostapp.com/clases')
     .then(function (response) {
         console.log(response);
     })
