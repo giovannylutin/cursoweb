@@ -4,11 +4,8 @@ var app = new Vue({
       message: 'Menu de retos de platzi segun cursos',
       mensaje2:" Logros Cumplidos",
       carrera: "Escuela de Desarrollo Web",
-      cursos:[
-          {id_curso:1,curso:"Curso Definitivo de HTML y CSS",estado:1},
-          {id_curso:2,curso:"Curso Práctico de HTML y CSS",estado:1},
-          {id_curso:3,curso:"Curso de Responsive Design",estado:1}
-        ],
+      info:[],
+      cursos:[],
       clases:[
         {id:1,fk_idcurso:1,class:"clase 8",contenido:"reto 1",enlaceclass:"clases/clase_8.html"},
         {id:2,fk_idcurso:1,class:"clase 19",contenido:" select",enlaceclass:"clases/clase_19.html"},
@@ -32,5 +29,16 @@ var app = new Vue({
         {id:1,fk_idcurso:2,class:"Reto 2",contenido:" Clon de wikipedia",enlaceclass:"clases/Curso_Práctico_de_HTML_y_CSS/clase_reto2.html"},
         {id:1,fk_idcurso:3,class:"Single page",contenido:"-Estatica",enlaceclass:"clases/Curso_de_Responsive_Design/index.html"}
       ]
-    }
-    })
+     },
+     mounted (){
+        this.obtenerclases();
+     },
+     methods:{
+       obtenerclases(){
+        axios
+        .get('https://testgio90.000webhostapp.com/cursos')
+        .then(response => (this.cursos = response.data))
+        //  console.log("hola")
+       }
+     }
+});
