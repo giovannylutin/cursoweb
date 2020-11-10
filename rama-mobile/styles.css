@@ -150,9 +150,17 @@ main {
   line-height: 1.6rem;
   color: #757575;
 }
+.main-tables-container{
+  display: flex;
+  height: 370px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
 
 .main-corrency-table{
   width: 70%;
+  scroll-snap-align: center;
   min-width: 235px;
   max-width: 500px;
   height: 360px;
@@ -162,22 +170,22 @@ main {
 
 .main-corrency-table .corrency-table--title{
   margin-bottom: 15px;
-  margin-left: 10px;
+  /* margin-left: 10px;*/
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 2.3rem;
   color: var(--bitcoin-orange);
-  text-align: left;
+  text-align: center;
 }
 
 .main-corrency-table .corrency-table--title2{
   margin-bottom: 15px;
-  margin-left: 10px;
+  /* margin-left: 10px;*/ /* lo tenia para mobile first */
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 2.3rem;
   color: var(--secondary-blue);
-  text-align: left;
+  text-align: center; /* Aqui tenia left en mobile first*/
 }
 
 .corrency-table--container{
@@ -589,4 +597,39 @@ main {
   height: 20px;
   background-image: url('https://i.imgur.com/BLslUyZ.png');
   vertical-align: text-bottom;
+}
+
+footer{
+  display: flex;
+  width: 100%;
+  height: 150px;
+  background-color: var(--bitcoin-orange);
+}
+
+footer section{
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .left ul{
+  margin-left: 50px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  list-style: none;
+}
+
+.left li{
+  margin: 10px 0;
+}
+
+.left a{
+  text-decoration: none;
+  color: var(--just-white);
+}
+
+.right{
+  margin-right: 20px;
 }
