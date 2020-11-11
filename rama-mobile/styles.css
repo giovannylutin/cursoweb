@@ -175,7 +175,7 @@ main {
   font-weight: bold;
   line-height: 2.3rem;
   color: var(--bitcoin-orange);
-  text-align: center;
+  text-align: left;
 }
 
 .main-corrency-table .corrency-table--title2{
