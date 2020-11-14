@@ -3,6 +3,13 @@
   width: 930px;
   margin: 0 auto;
 }
+/* .main-corrency-table .corrency-table--title{
+  margin-left: 85px;
+}
+
+.main-corrency-table .corrency-table--title2{
+  margin-left: 85px;
+} */
 .product-cards--container{
   display: flex;
   flex-wrap: wrap;
@@ -11,4 +18,15 @@
 }
 .plans-container--slider{
   justify-content: center;
+  overflow-x: hidden;
 }
+/* .plans-container--slider{
+  display: flex;
+  height: 316px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  margin-right: 45px;
+  margin-left: 45px; 
+  seria buena opcion para que se mire sola cada tarjeta
+} */
