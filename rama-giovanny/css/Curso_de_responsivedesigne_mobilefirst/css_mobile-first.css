@@ -46,12 +46,13 @@ header{
     text-align: center;
     background: linear-gradient(207.8deg, var(--black) 16.69%, var(--bitcoin-orange) 100%);
 }
-.header img{
+/* .header img{
     margin-top: 60px;
+    margin-bottom: 30px;
     width: 150px;
     height: 24px;
     align-items: center;
-}
+} */
 .contenidoheader{
     width: 100%;
     min-width: 288px;
@@ -60,6 +61,7 @@ header{
     margin-top: 50px;
     padding: 20px;
     align-items: center;
+    margin: 0 auto;
     /* outline: 2px solid red; */
 }
 .contenidoheader h1{
@@ -285,4 +287,66 @@ header{
     font-weight: 500;
     line-height: 1.8rem;
     color: #808080;
+}
+.contenido-cards{
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--black);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.16);
+}
+.iconocard1{
+    background-image: url("http://drive.google.com/uc?export=view&id=1nKLoR0DWKXs3slrEJmTus-GLog8515h-");
+}
+.iconocard2{
+    background-image: url("http://drive.google.com/uc?export=view&id=18Hjm7af04SCtP1gJA8C4WcakAQbQxwu6");
+}
+.iconocard3{
+    background-image: url("http://drive.google.com/uc?export=view&id=1boIMjJ27Uslq6d4TXtDywjR6jpD5DULw");
+}
+.iconocard4{
+    background-image: url("http://drive.google.com/uc?export=view&id=1TDJFmX3Aaq83cFcP_OuwOmCw7128dHGg");
+}
+.iconocard1, .iconocard2, .iconocard3, .iconocard4{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contenido-cards .titulo-cards{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+.contenido-cards .descripcion-card{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+.imagen-container{
+    width: 100%;
+    min-width:320px ;
+    height: 50vh;
+    background-image: url("http://drive.google.com/uc?export=view&id=1Z3YaadI6Q4oYuk3fOsN2xkFcMClUNTm5");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imagen-container h2{
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+    text-align: center;
 }
