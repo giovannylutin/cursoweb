@@ -37,6 +37,7 @@ cualquier enlace hacia otro elemento que nesesitemmos para nuestro proyecto -->
       <div class="titulos-informacion"> <h1>{{ message }}</h1></div>
       
       <div class="contenido-informacion">
+        <div class="scrolling">
         <section id="accordion">
           <ol class="card">
             <div  v-for="mostrarcurso in cursos">
@@ -52,9 +53,9 @@ cualquier enlace hacia otro elemento que nesesitemmos para nuestro proyecto -->
                 <div class="card-body">
                   <div>
                     <ol>
-                      <li v-for="(classlistado, index) in clases" v-if="classlistado.fk_idcurso==mostrarcurso.ID_CURSO">
-                        <a v-bind:href="classlistado.enlaceclass">
-                          {{classlistado.class}} {{classlistado.contenido}}
+                      <li v-for="classlistado in clases" v-if="classlistado.ID_CURSO==mostrarcurso.ID_CURSO && classlistado.ESTADO==1">
+                        <a v-bind:href="classlistado.LINK_CONTENIDO">
+                          {{classlistado.CLASE}} {{classlistado.TIPO}}
                         </a>
                       </li>
                     </ol>
@@ -64,6 +65,7 @@ cualquier enlace hacia otro elemento que nesesitemmos para nuestro proyecto -->
             </div>
           </ol>
         </section>
+        </div>
       </div>
     </section>
 
