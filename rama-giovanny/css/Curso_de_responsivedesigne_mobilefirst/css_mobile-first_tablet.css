@@ -1,0 +1,14 @@
+.tablas{
+    display: flex;
+    width: 760px;
+    margin: 0 auto;
+}
+.contenedor-cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 930px;
+    margin: 0 auto;
+}
+.contenedor_slider{
+   justify-content: center;
+}

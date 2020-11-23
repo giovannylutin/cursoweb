@@ -7,6 +7,7 @@ var app = new Vue({
       cursos:[],
       clases:[
         // {id:10,fk_idcurso:1,class:"clase ",contenido:" reto 2",enlaceclass:"clases/clase_reto2.html"},
+        //{id:1,fk_idcurso:4,class:"clase 4-",contenido:" Iniciando con grid",enlaceclass:"clases/clase_reto2.html"},
       ]
      },
      mounted (){

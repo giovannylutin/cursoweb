@@ -23,6 +23,7 @@ cualquier enlace hacia otro elemento que nesesitemmos para nuestro proyecto -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="css/estilo_principal_mediaquerys.css" media="(max-width: 800px)">
     <title>Curso platzi</title>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
@@ -40,7 +41,7 @@ cualquier enlace hacia otro elemento que nesesitemmos para nuestro proyecto -->
         <div class="scrolling">
         <section id="accordion">
           <ol class="card">
-            <div  v-for="mostrarcurso in cursos">
+            <div class="item_clase"  v-for="mostrarcurso in cursos">
               <li class="card-header" v-if="mostrarcurso.ESTADO==1" v-bind:id="mostrarcurso.ID_CURSO" >
                 <h3 class="mb-0">
                   <img v-bind:src="mostrarcurso.LINK_ICONO" alt="">
