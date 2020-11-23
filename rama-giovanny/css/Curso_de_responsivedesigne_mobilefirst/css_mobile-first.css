@@ -136,6 +136,7 @@ header{
     /* outline: 2px solid red; */
     width: 100%;
     text-align: center;
+    margin-bottom: 30px;
     /* background-color: #E5E5E5; */
 }
 .infobatatbit__titulo{
@@ -169,7 +170,7 @@ header{
     max-width: 500px;
     font-family: "inter",sans-serif;
 }
-.infobatatbit__estados-titulo{
+.infobatatbit__estados-titulo {
     color: var(--bitcoin-orange);
     font-size: 1.8rem;
     font-weight: bold;
@@ -178,8 +179,25 @@ header{
     padding-top: 20px;
     margin-bottom: 10px;
 }
+.infobatatbit__estados-titulo_Comisiones{
+    color: var(--secondary-blue);
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    text-align: left;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+.tablas{
+    display: flex;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+
+}
 .infobatatbit__tabla{
     width: 90%;
+    scroll-snap-align: center;
     min-width: 230px;
     max-width: 300px;
     height: 250px;
@@ -207,7 +225,7 @@ header{
     border-radius: 0 0 0 15px;
 }
 .infobatatbit__tablamuestra .infobatatbit__derechabajo{
-    border-radius: 0 0 0 15px;
+    border-radius: 0 0 15px 0;
 }
 .infobatatbit__tablamuestra .infobatatbit__tabla-price{
     color: #757575;
@@ -235,7 +253,7 @@ header{
     background-position: center;
     background-repeat: no-repeat;
 }
-.informacion__actualizacion{
+.informacion__actualizacion {
     width: 190px;
     height: 30px;
     margin: 0 auto;
@@ -244,7 +262,16 @@ header{
     background-color: var(--soft-orange);
     border-radius: 8px;
 }
-.informacion__actualizacion p{
+.informacion__actualizacion_Comiciones{
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: var(--secondary-blue);
+    border-radius: 8px;
+}
+.informacion__actualizacion p, .informacion__actualizacion_Comiciones p{
     font-size: 1.2rem;
     line-height: 1.5rem;
     font-weight: 300;
@@ -352,7 +379,7 @@ header{
 }.contenedor__planes{
     width: 100%;
     min-width: 320px;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
     text-align: center;
 }
 .planes-titulo{
@@ -376,18 +403,33 @@ header{
     line-height: 1.8rem;
     color: #757575;
 }
-.contenedor_detalles{
+.price-plan{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contenedor_slider{
+    display: flex;
+    height: 300px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+
+}
+.contenedor_detalles1, .contenedor_detalles2, .contenedor_detalles3{
     position: relative;
+    scroll-snap-align: center;
     width: 70px;
-    min-width: 230px;
+    min-width: 190px;
     max-width: 300px;
     height: 250px;
-    margin: 30px auto 0;
+    margin: 30px 5px 0;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
-}.recomendado{
+}
+.recomendado{
     position: absolute;
     width: 120px;
     height: 31px;
@@ -398,4 +440,81 @@ header{
     color: var(--just-white);
     font-size: 1.2rem;
     padding: 8px;
+}
+.contenedor__planinfo--titulo{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: black;
+}
+.contenedor__planinfo--valor{
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5rem;
+    color: black;
+    margin-bottom: 10px;
+}
+.contenedor__planinfo--valor span{
+    font-size: 1.3rem;
+    font-weight: 300;
+    vertical-align: super;
+}
+.contenedor__planinfo--saving{
+    font-size: 1.2rem;
+}
+.plan__ok{
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: #faf8f7;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color:var(--black);
+    font-family: "DM Sans", sans-serif;
+}
+.plan__ok span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("http://drive.google.com/uc?export=view&id=13SJx8SYoyQjGj9DhEKoYKfDcehkPZTPs");
+    vertical-align: text-bottom;
+}
+footer{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+footer section{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+footer .links_info ul{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+.links_info li{
+    margin: 10px 0;
+    text-decoration: none;
+}
+.links_info a{
+    text-decoration: none;
+    color: var(--just-white);
+}
+.logo_footer{
+    display: flex;
+    flex-direction: column;
+}
+.logo_footer span{
+    margin-top: 10px;
+    color: var(--just-white);
 }

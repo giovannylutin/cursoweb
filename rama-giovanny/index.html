@@ -40,7 +40,7 @@ cualquier enlace hacia otro elemento que nesesitemmos para nuestro proyecto -->
         <div class="scrolling">
         <section id="accordion">
           <ol class="card">
-            <div  v-for="mostrarcurso in cursos">
+            <div class="item_clase"  v-for="mostrarcurso in cursos">
               <li class="card-header" v-if="mostrarcurso.ESTADO==1" v-bind:id="mostrarcurso.ID_CURSO" >
                 <h3 class="mb-0">
                   <img v-bind:src="mostrarcurso.LINK_ICONO" alt="">
