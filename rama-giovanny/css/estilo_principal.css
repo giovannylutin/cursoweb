@@ -138,3 +138,21 @@ li a{
 .item_clase{
     margin-bottom: 1px;
 }
+.informacion__footer{
+    width: 100%;
+    padding: 10px 20px;
+}
+.informacion__footer--opcion{
+    box-shadow: 0px 8px 10px lightgrey;
+    border-radius: 10px;
+    height: 60px;
+    padding: 11px 10px;
+    border: 1.5px solid lightgrey;
+    text-align: center;
+}
+.informacion__footer--opcion a{
+    color: black;
+    font-weight: 700;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+}
