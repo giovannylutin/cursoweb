@@ -1,0 +1,29 @@
+body{
+    background-color: royalblue;
+}
+.contenedor{
+    display: grid;
+     /* grid-template-columns: 25% 200px 25%; */
+    /* grid-template-rows: 300px 300px;  */
+    /* grid-template: 300px 100px 100px /50% 200px 100px; */
+    /*definir filas*/
+    /* grid-template-rows: 300px 300px; */
+    grid-template:300px 100px 100px / 50% 200px 100px;
+}
+.item{
+    background-color: skyblue;
+    padding: 10px;
+    border: 1px solid yellow;
+}
+.item:nth-of-type(4){
+    background-color: seagreen;
+    overflow: auto;
+    /* display: subgrid; */
+    /* display: inline-grid; */
+    display: grid;
+    grid-template:50px 50px 50px / 50% 200px 100px;
+}
+.item .item{
+    background-color: sienna;
+}
+
