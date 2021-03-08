@@ -5,9 +5,7 @@ var app = new Vue({
       mensaje2:" Logros Cumplidos",
       carrera: "Escuela de Desarrollo Web",
       cursos:[],
-      clases:[
-        // {id:10,fk_idcurso:1,class:"clase ",contenido:" reto 2",enlaceclass:"clases/clase_reto2.html"},
-      ]
+      clases:[]
      },
      mounted (){
         this.obtenerCursos();
