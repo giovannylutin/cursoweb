@@ -12,19 +12,35 @@ var app = new Vue({
         this.obtenerClases();
      },
      methods:{
-       obtenerCursos(){
-        axios
-         .get('https://testgio90.000webhostapp.com/cursos'+'?nocache='+new Date().getTime())
-        //  .get('http://192.168.1.17/api/cursos')
-         .then(response => (this.cursos = response.data))
-        //  console.log("hola")
-       },
-       obtenerClases(){
-        axios
-        //  .get('http://192.168.1.17/api/clases')
-         .get('https://testgio90.000webhostapp.com/clases'+'?nocache='+new Date().getTime())
-        .then(response => (this.clases = response.data))
-        //  console.log("hola")
+       getcursos(){
+         fetch('https://testgio90.000webhostapp.com/cursos')
+         .then(res =>{
+           return res.json()
+         })
+         .then(data =>{
+           this.cursos=data;
+         })
        }
+      //  obtenerCursos(){
+      //    fetch('https://testgio90.000webhostapp.com/cursos')
+      //    .then(rescursos => {
+      //      return rescursos.json()
+      //    })
+      //    .then(data =>{
+      //      this.cursos=data;
+      //    })
+        // axios
+        // .get('https://testgio90.000webhostapp.com/cursos'+'?nocache='+new Date().getTime())
+          //.get('http://192.168.1.15/api/cursos')
+        //  .then(response => (this.cursos = response.data))
+        //  console.log("hola")
+      //  },
+      //  obtenerClases(){
+        // axios
+         //.get('http://192.168.1.15/api/clases')
+        // .get('https://testgio90.000webhostapp.com/clases'+'?nocache='+new Date().getTime())
+        // .then(response => (this.clases = response.data))
+          // console.log("hola")
+      //  }
      }
 });
