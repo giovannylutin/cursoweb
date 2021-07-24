@@ -8,11 +8,11 @@ var app = new Vue({
         // {"ID_CURSO":"1","ID_CARRERA":"1","CURSO":"Curso Definitivo de HTML y CSS","FECHA_INICIO":"2020-11-02","ESTADO":"1","LINK_ICONO":" http:\/\/drive.google.com\/uc?export=view&id=1IcUstGyysPaS7yluUkVcdn4Xnxp1L2RM","LINK_LOGRO":"pendiente"}
       ],
       clases:[],
-      QA:[]
+      QA:[['a','b','c','d']]
      },
      mounted (){
       //  this.getcursos();
-       this.getQA();
+      // this.getQA();
         // this.obtenerCursos();
         // this.obtenerClases();
      },
