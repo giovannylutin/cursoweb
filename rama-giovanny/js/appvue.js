@@ -8,7 +8,7 @@ var app = new Vue({
         // {"ID_CURSO":"1","ID_CARRERA":"1","CURSO":"Curso Definitivo de HTML y CSS","FECHA_INICIO":"2020-11-02","ESTADO":"1","LINK_ICONO":" http:\/\/drive.google.com\/uc?export=view&id=1IcUstGyysPaS7yluUkVcdn4Xnxp1L2RM","LINK_LOGRO":"pendiente"}
       ],
       clases:[],
-      QA:[]
+      QA:[['a','b','c','d']]
      },
      mounted (){
       //  this.getcursos();
@@ -17,33 +17,9 @@ var app = new Vue({
         // this.obtenerClases();
      },
      methods:{ 
-     getcursos() {
-        try {
-          //axios
-            fetch("https://testgio90.000webhostapp.com/cursos", {
-
-})
-.then(response => response.json())
-.then(console.log);
-            //.then(consultado => (this.cursos=consultado.data))
-            //.then(res => {
-              //  var objeto  = res.data.data;
-                //var data = [];
-                //var objeto = snapshot.val();
-            //     for (var propiedad in objeto) {
-            //          data.unshift({
-            //          name: objeto[propiedad].name,
-            //          id: objeto[propiedad].id,           
-            //          phone_number: objeto[propiedad].phone_number,                                   
-            //     });                  
-            // }          
-        //});
-   } catch (error) {
-    console.log(error);
-   }
-  },
+     getcursos() { },
 getQA(){
-  const url = 'https://sheets.googleapis.com/v4/spreadsheets/177mom_x9RQ6MpQCsnqOODuKAAD8uaVfJokmthhPLkhY/values/Datos1!A:C?key=AIzaSyC8UFLweLmWi_GwdzrLlI7mfO7Bpp5op5A';
+   const url = 'https://sheets.googleapis.com/v4/spreadsheets/177mom_x9RQ6MpQCsnqOODuKAAD8uaVfJokmthhPLkhY/values/Datos1!A:C?key=AIzaSyC8UFLweLmWi_GwdzrLlI7mfO7Bpp5op5A';
   // fetch(url)
   // .then(res => res.json())
   // .then(res => this.QA=res)
