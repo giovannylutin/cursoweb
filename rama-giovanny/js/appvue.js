@@ -19,8 +19,12 @@ var app = new Vue({
      methods:{ 
      getcursos() { },
 getQA(){
+<<<<<<< HEAD
   const url = 'https://sheets.googleapis.com/v4/spreadsheets/177mom_x9RQ6MpQCsnqOODuKAAD8uaVfJokmthhPLkhY/values/Datos1!A:C?key=AIzaSyC8UFLweLmWi_GwdzrLlI7mfO7Bpp5op5A';
  console.table(url)
+=======
+  // const url = 'https://sheets.googleapis.com/v4/spreadsheets/177mom_x9RQ6MpQCsnqOODuKAAD8uaVfJokmthhPLkhY/values/Datos1!A:C?key=AIzaSyC8UFLweLmWi_GwdzrLlI7mfO7Bpp5op5A';
+>>>>>>> 777fa6f58bcdc39f0b43e89ae3cf534fe63c35e4
   // fetch(url)
   // .then(res => res.json())
   // .then(res => this.QA=res)
