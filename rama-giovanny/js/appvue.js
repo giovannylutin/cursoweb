@@ -8,7 +8,7 @@ var app = new Vue({
         // {"ID_CURSO":"1","ID_CARRERA":"1","CURSO":"Curso Definitivo de HTML y CSS","FECHA_INICIO":"2020-11-02","ESTADO":"1","LINK_ICONO":" http:\/\/drive.google.com\/uc?export=view&id=1IcUstGyysPaS7yluUkVcdn4Xnxp1L2RM","LINK_LOGRO":"pendiente"}
       ],
       clases:[],
-      QA:[['a','b','c','d'],['e','f','g','h']]
+      QA:[['a','b','c','d'],['e','f','g','c']]
      },
      mounted (){
       //  this.getcursos();
@@ -19,7 +19,7 @@ var app = new Vue({
      methods:{ 
      getcursos() { },
 getQA(){  
-let url ='https://sheets.googleapis.com/v4/spreadsheets/177mom_x9RQ6MpQCsnqOODuKAAD8uaVfJokmthhPLkhY/values/Datos1!A:C?key=AIzaSyC8UFLweLmWi_GwdzrLlI7mfO7Bpp5op5A'
+// let url ='https://sheets.googleapis.com/v4/spreadsheets/177mom_x9RQ6MpQCsnqOODuKAAD8uaVfJokmthhPLkhY/values/Datos1!A:C?key=AIzaSyC8UFLweLmWi_GwdzrLlI7mfO7Bpp5op5A';
 
   //  console.table(url)
   // fetch(url)
