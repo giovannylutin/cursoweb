@@ -19,7 +19,7 @@ var app = new Vue({
      methods:{ 
      getcursos() { },
 getQA(){
-   const url = 'https://sheets.googleapis.com/v4/spreadsheets/177mom_x9RQ6MpQCsnqOODuKAAD8uaVfJokmthhPLkhY/values/Datos1!A:C?key=AIzaSyC8UFLweLmWi_GwdzrLlI7mfO7Bpp5op5A';
+  // const url = 'https://sheets.googleapis.com/v4/spreadsheets/177mom_x9RQ6MpQCsnqOODuKAAD8uaVfJokmthhPLkhY/values/Datos1!A:C?key=AIzaSyC8UFLweLmWi_GwdzrLlI7mfO7Bpp5op5A';
   // fetch(url)
   // .then(res => res.json())
   // .then(res => this.QA=res)
