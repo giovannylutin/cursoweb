@@ -8,7 +8,7 @@ var app = new Vue({
         // {"ID_CURSO":"1","ID_CARRERA":"1","CURSO":"Curso Definitivo de HTML y CSS","FECHA_INICIO":"2020-11-02","ESTADO":"1","LINK_ICONO":" http:\/\/drive.google.com\/uc?export=view&id=1IcUstGyysPaS7yluUkVcdn4Xnxp1L2RM","LINK_LOGRO":"pendiente"}
       ],
       clases:[],
-      QA:[]
+      QA:[['a','b','c','d'],['e','f','g','h']]
      },
      mounted (){
       //  this.getcursos();
@@ -18,20 +18,10 @@ var app = new Vue({
      },
      methods:{ 
      getcursos() { },
-<<<<<<< HEAD
-getQA(){  // const url = 'https://sheets.googleapis.com/v4/spreadsheets/177mom_x9RQ6MpQCsnqOODuKAAD8uaVfJokmthhPLkhY/values/Datos1!A:C?key=AIzaSyC8UFLweLmWi_GwdzrLlI7mfO7Bpp5op5A';
-const url ='https://sheets.googleapis.com/v4/spreadsheets/177mom_x9RQ6MpQCsnqOODuKAAD8uaVfJokmthhPLkhY/values/Datos1!A:C?key=AIzaSyC8UFLweLmWi_GwdzrLlI7mfO7Bpp5op5A'
+getQA(){  
+let url ='https://sheets.googleapis.com/v4/spreadsheets/177mom_x9RQ6MpQCsnqOODuKAAD8uaVfJokmthhPLkhY/values/Datos1!A:C?key=AIzaSyC8UFLweLmWi_GwdzrLlI7mfO7Bpp5op5A'
 
   //  console.table(url)
-=======
-getQA(){
-<<<<<<< HEAD
-  const url = 'https://sheets.googleapis.com/v4/spreadsheets/177mom_x9RQ6MpQCsnqOODuKAAD8uaVfJokmthhPLkhY/values/Datos1!A:C?key=AIzaSyC8UFLweLmWi_GwdzrLlI7mfO7Bpp5op5A';
- console.table(url)
-=======
-  // const url = 'https://sheets.googleapis.com/v4/spreadsheets/177mom_x9RQ6MpQCsnqOODuKAAD8uaVfJokmthhPLkhY/values/Datos1!A:C?key=AIzaSyC8UFLweLmWi_GwdzrLlI7mfO7Bpp5op5A';
->>>>>>> 777fa6f58bcdc39f0b43e89ae3cf534fe63c35e4
->>>>>>> 7eeaba02339d2506ae826cf9f91530d2b7c4e9da
   // fetch(url)
   // .then(res => res.json())
   // .then(res => this.QA=res)
